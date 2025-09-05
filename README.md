@@ -12,8 +12,7 @@ Esta es una API para guardar, ver, cambiar y borrar mascotas.
 1. Clona el proyecto:
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repo.git
-cd tu-repo
+git clone https://github.com/ElLeoZalds/WSMASCOTAS
 Instala los paquetes:
 
 bash
@@ -21,19 +20,20 @@ Copiar código
 npm install
 Crea un archivo .env con esto:
 
-ini
-Copiar código
+init
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=
+DB_DATABASE=veterinaria
+DB_PORT=3306
 PORT=3000
-HOST=localhost
-USER=tu_usuario_mysql
-PASSWORD=tu_contraseña_mysql
-DB=nombre_de_tu_base
+
 Crea la base de datos y tabla en MySQL:
 
 sql
 Copiar código
-CREATE DATABASE nombre_de_tu_base;
-USE nombre_de_tu_base;
+CREATE DATABASE veterinaria;
+USE mascotas;
 
 CREATE TABLE mascotas (
   id INT AUTO_INCREMENT PRIMARY KEY,
